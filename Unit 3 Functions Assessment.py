@@ -1,8 +1,11 @@
+import random
+
+
 def doubleeven(n):
-    if n (2, 1000, 2):
+    if n in range(2, 1000, 2):
         n = n * 2
         return n
-    if n (1, 1000, 2):
+    if n in range(1, 1000, 2):
         n = -1
         return n
     elif n < 0:
@@ -26,4 +29,19 @@ def functiongrade(percent):
 
 
 print(functiongrade(int(input("enter grade"))))
+
+
+def largestnum(num1, num2, num3):
+    if num1 > num2 and num3:
+        return num1
+    if num2 > num3 and num1:
+        return num2
+    if num3 > num2 and num1:
+        return num3
+
+print(largestnum(1, 2, 3))
+
+
+def sum_dice(dice, numrolls):
+    print("hello")
 
