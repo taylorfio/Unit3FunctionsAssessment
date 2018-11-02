@@ -39,9 +39,17 @@ def largestnum(num1, num2, num3):
     if num3 > num2 and num1:
         return num3
 
+
 print(largestnum(1, 2, 3))
 
 
 def sum_dice(dice, numrolls):
-    print("hello")
+    sum = 0
+    for x in range(1, numrolls):
+        num_holder = random.randint(1, dice)
+        sum = sum + num_holder
+    return sum
+
+
+print(sum_dice(6, 5))
 
